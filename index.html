@@ -51,6 +51,10 @@ h3 strong {
   color: #DC322F;
 }
 
+.red {
+  color: #DC322F !important;
+}
+
 .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
   color: #002B36;
 }
@@ -106,147 +110,410 @@ h3 strong {
     </section>
 
     <section>
-      <h3>Paradigm</h3>
-      <blockquote>
-        признанные всеми научные достижения,
-        которые дают модель постановки проблем и
-        их решений научному сообществу
-      </blockquote>
-      <div style="text-align: right">Т. Кун</div>
+      <img src="rabbit_hole.jpg"/>
     </section>
 
     <section>
-      <h3>Multi-Paradigm</h3>
-      <blockquote>
-        совершенствование искусства отдельного программиста требует,
-        чтобы он расширял свой репертуар парадигм
-      </blockquote>
-      <div style="text-align: right"> Р. Флойд</div>
+      <h3 style="margin-bottom: 0px;">Функции</h3>
+      <p  style="margin-top: 0px;">применяються</p>
+      <hr/>
+      <h3 style="margin-bottom: 0px;">Данные</h3>
+      <p  style="margin-top: 0px;letter-spacing: 9px;">значения</p>
+      <hr/>
+      <p class="red">Нет объектов и классов</p>
     </section>
 
     <section>
-      <h3>Multi-Paradigm?</h3>
+      <h3>Чистые Функции</h3>
+    <pre><code>
+    list = [1, 2, 3]
+
+    new_list = push(list, 4)
+
+    puts list # => [1, 2, 3]
+
+    puts new_list # => [1, 2, 3, 4]
+    </pre></code>
     </section>
 
     <section>
-      <h3>What is OOP?</h3>
+      <h3>Чистые Функции</h3>
+    <pre><code>
+    mapa = {a: 1}
 
-      http://programmers.stackexchange.com/questions/46592/so-what-did-alan-kay-really-mean-by-the-term-object-oriented
+    new_mapa = assoc(mapa, :b, 2)
 
+    puts mapa #=> {a: 1}
+
+    puts new_mapa #=> {a: 1, b: 2}
+    </pre></code>
     </section>
 
     <section>
-      <h3>What is FP?</h3>
-      <h4>Hx</h4>
-
-      hardware -> abstractions
-      math -> practical
-
+      <h3>Всегда одно и тоже</h3>
+      <pre><code>cos(&#960;) => 1</pre></code>
+      <pre><code>cos(&#960;) => 1</pre></code>
+      <pre><code>cos(&#960;) => 1</pre></code>
+      <img src="notime.png"/>
     </section>
 
     <section>
-     <h3>Out of the tar pit?</h3>
-     <h4>Complexity: acidental vs essential</h4>
+      <h3 style="font-size:43px">Чего бы вокруг не происходило</h3>
+      <pre><code>cos(&#960;) => 1</pre></code>
+      <img src="apocalypse.jpg"/>
     </section>
 
     <section>
-      <h3>Pure Function</h3>
+      <h3 style="margin-bottom:0px">Вообще ничего</h3>
+      <h3 style="font-size: 62px; margin-top:0px">не поменять</h3>
+      <img src="copy-icon.png"/>
     </section>
 
     <section>
-      <h3>High Order Function</h3>
+      <h3 style="font-size: 58px;margin-bottom:0px">И нет переменных</h3>
+      <img src="vars.jpg"/>
+      <p style="font-size: 52px;margin-bottom:0px">Вообще ничего не прячут</p>
     </section>
 
     <section>
-      <h3>Values</h3>
+      <h3 style="font-size: 45px;">передавать все явно</h3>
+      <img src="pipe.jpg"/>
     </section>
 
     <section>
-      <h3>Polimorphism</h3>
-      <h3>Abstract DataTypes</h3>
-      <h3>Expression Problem</h3>
+      <h3>Kомпозиция</h3>
+      <hr/>
+      <pre><code>
+      f(g(h(x)))
+
+      f.g.h x
+
+      (-> (h x) g f)
+      </pre></code>
     </section>
 
     <section>
-      <h3>SOLID</h3>
-
-      <pre>
-Single responsibility principle
-a class should have only a single responsibility (i.e. only one potential change in the software's specification should be able to affect the specification of the class)
-
-Open/closed principle
-“software entities … should be open for extension, but closed for modification.”
-
-Liskov substitution principle
-“objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program.” See also design by contract.
-
-Interface segregation principle
-“many client-specific interfaces are better than one general-purpose interface.”
-
-Dependency inversion principle
-one should “Depend upon Abstractions. Do not depend upon concretions.”
-      </pre>
+      <h3>У нас Программы - графы</h3>
+      <img src="graph.png"/>
     </section>
 
     <section>
-      <h3>GRASP</h3>
-      <ul>
-        <li>Low Coupling</li>
-        <li>Polimorphism</li>
-      </ul>
+      <h3>A у них - деревья</h3>
+      <img src="tree.png"/>
     </section>
 
     <section>
-      <h3>Code reuse inheritance vs composition</h3>
-      <h3>Patterns</h3>
-      <h3>Inheritance vs Composition</h3>
+      <h3>Не выполняются</h3>
+      <img src="expression_tree.png"/>
+      <h3>а вычисляються</h3>
     </section>
 
     <section>
-      <h3>Chain of responsibility</h3>
-      <h3>Decorator</h3>
-
-      <h3>Template Method</h3>
-      <h3>Strategy</h3>
-      <h3>Visitor</h3>
-      <h3>Null object</h3>
+      <h3 style="font-size: 33px;">Функции высших порядков</h3>
+      <img src="aristo.jpg"/>
     </section>
 
     <section>
-      <h3>Fat Models</h3>
-      <h4>Decomposition</h4>
+      <h3 style="font-size:53px;" >Принимают функции</h3>
+      <p style="font-size: 47px;">параметризация вычисления</p>
+      <hr/>
+      <h3>Возвращают функции</h3>
+      <p style="font-size: 47px;letter-spacing: 2.5px;">конструкторы вычислений</p>
     </section>
 
     <section>
-      <h3>DTO</h3>
-      <h4>logic in view</h4>
+      <h3>fold (reduce)</h3>
+      <pre><code>
+      # fold(col, init-value, &proc)
+      sum = fold([1,2,3], 0,+)
+      prod = fold([1,2,3], 0,*)
+
+      map = fn (f, col)
+        fold col, [] do |acc,x|
+          push(acc,f(x))
+        end
+      end
+
+      filter = fn (pred, col)
+        fold col, [] do |acc,x|
+          pred(x) ?  push(acc,f(x)) : acc
+        end
+      end
+      </pre></code>
     </section>
 
     <section>
-      <h3>DCI & Service Object</h3>
+      <h3>wrap (middle-ware)</h3>
+      <pre><code>
+      fn wrap(f)
+        fn (x)
+          if ???
+            f(x)
+          else
+            return ???
+          end
+        end
+      end
+      </pre></code>
+      <p>Like our decorators <br/>or chain of responsibility</p>
+    </section>
+
+    <section>
+      <h3>compose wrappers</h3>
+      <pre><code>
+      f' =  wrap(f)
+      f'' = other_wrap'(f')
+      ....
+      ....
+      ....
+      f''''(x)
+      </pre></code>
+    </section>
+
+
+    <section>
+      <h3>Transducers</h3>
+      <pre><code>
+      # chain(acc,elem)
+      chain = compose(
+        filter(odd?),
+        map(double),
+        take(5)
+      )
+
+      reduce(chain, [], coll)
+      </pre></code>
+      <p>собираем вычисление, потом выполняем</p>
+    </section>
+
+    <section>
+      <h3 style="font-size: 45px;">Изменяемое состояние</h3>
+      <img src="mutable.jpg"/>
+    </section>
+
+    <section>
+      <h3>Software Transactional Memory</h3>
+      <pre><code>
+      # isolation
+      transaction do
+        change(state1)
+        change(state2)
+      end
+      </pre></code>
+      <p>Ни тебе race condition, dead lock, incosistent read</p>
+    </section>
+
+    <section>
+      <h3 style="font-size: 45px;">Функциональное ядро</h3>
+      <img src="core.jpg"/>
+    </section>
+
+    <section>
+      <h3 style="font-size: 45px;">А как они пишут WEB?</h3>
+    </section>
+
+    <section>
+      <h3>Web Server у них функция</h3>
+      <pre><code>
+      fn server(req)
+        return {
+          status: 200,
+          body: "Hello",
+          headers: {
+            ContentType: 'text'
+          }
+        }
+      end
+
+      server({uri: "/home", params: {q: '???'}})
+      </pre></code>
+    </section>
+
+    <section>
+      <h3>Обертки для Middle-Ware</h3>
+      <pre><code>
+      server = compose(
+        wrap_params,
+        wrap_cookies,
+        wrap_json_request,
+        wrap_form_params,
+        dispatch
+      )
+
+      server(request)
+      </pre></code>
+      <p>Наш rack</p>
+    </section>
+
+    <section>
+      <h3>Routing</h3>
+      <pre><code>
+      # dispatch(request, routes_spec) -> handler
+
+      fn dispatch(request, routes_spec)
+         handler = find_in_routes(request, routes_spec)
+         handler(request)
+      end
+      </pre></code>
+
+      <p>Они ничего не знают про паттерны</p>
+    </section>
+
+    <section>
+      <h3>Route Spec просто данные</h3>
+      <pre><code>
+      route_spec = {
+        admin: {
+          users: {
+            POST: users/create
+            GET:  users/index
+           }
+        }
+      }
+
+      route_spec = [
+        ["admin", "users", "POST", users/create],
+        ["admin", "users", "GET",  users/create],
+      ]
+      </pre></code>
+
+      <h2>1-3 files; ~100 SLOC total</h2>
+    </section>
+
+    <section>
+      <h3>gem "journey"</h3>
+      <h3>1.6K SLOC + 1.5K tests</h3>
+      <hr/>
+      <h3 class="red">*10 times bigger</h3>
+    </section>
+
+    <section>
+      <h3>View & Templating у них тоже функция</h3>
+      <pre><code>
+      fn layout(content)
+        [:html,
+          [:header,
+            [:title "layout"]],
+          [:body, menu() content]]
+      end
+
+
+      def render(data)
+        layout(
+          [:ul, map data {|x|
+             [:li, link_to(x.url, x.text)]}]
+      end
+      </pre></code>
+      <h3> ~600 SLOC + form builder</h3>
+    </section>
+
+    <section>
+      <p>Я же говорю одни функции</p>
+      <pre><code>
+      layout1(
+        layout2(content1()),
+        layout3(content2())
+      )
+
+      def decorate_user(user)
+        user[:full_name] = user[:first_name] + user[:last_name]
+        user
+      end
+
+      def link_to(url, label)
+        [:a, {href: url}, label]
+      end
+      </pre></code>
+      <p>нет проблем с лайаутами и хэлперами</p>
+    </section>
+
+    <section>
+      <h3>haml</h3>
+      <h3>2.6K SLOC + 3K tests</h3>
+      <hr/>
+      <h3 class="red">*10 times bigger</h3>
+    </section>
+
+    <section>
+      <h3>А ORM?</h3>
+      <hr/>
+      <p> Ups, а объектов то нет</p>
+    </section>
+
+    <section>
+      <p>А работа с базой?</p>
+      <pre><code>
+      query = {
+        select: [:id, :name], from: "users",
+        where: [:name "=" x]
+      }
+
+      fn by_name(name, query)
+        merge(query, :where,["name", "ilike", name])
+      end
+
+      fn active_users(query)
+        merge(query, :where,["status", "=", "active"])
+      end
+
+      conn/exec( sql( active_users( by_name("nicola", query)))
+      </pre></code>
+      <p>опять функции ~ 800 SLOC</p>
     </section>
 
     <section>
       <h3>Arel</h3>
+      <h3>3.4K SLOC + 5K tests</h3>
     </section>
 
     <section>
-      <h3>Functional Web Stack</h3>
-
-      view :: data -> HTML || JSON
-
-      http->data struct->obj->sql->db
-      db->sql->obj->data struct->http
-
+      <h3>Функциональный Web?</h3>
+      <pre><code>
+  String:HTTP -> fns ->  String:SQL -> DB -> fns -> String:HTTP
+      </pre></code>
     </section>
 
     <section>
-      <h3>Conccurency</h3>
+      <h3>А фреймворки есть?</h3>
+      <hr/>
+      <p>Почти нет, много маленьких библиотек,<br/>
+      которые легко склеиваются</p>
     </section>
 
     <section>
-      <h3>Tell Above, and Ask Below - Hybridizing OO and Functional Design</h3>
-      http://michaelfeathers.typepad.com/michael_feathers_blog/2012/03/tell-above-and-ask-below-hybridizing-oo-and-functional-design.html
+      <h3>А почему они маленькие?</h3>
+      <hr/>
+      <p>Сильно сфокусированны на задаче</p>
+      <p>SOLIDные</p>
+    </section>
+
+    <section>
+      <h3>Но мы тоже</h3>
+      <hr/>
+      <p>Почему мы тогда тратим в 10 раз больше сил?</p>
+    </section>
+
+    <section>
+      <h3>Почему композиция - проблема?</h3>
+      <hr/>
+      <p>Почему декомпозиция тоже проблема?</p>
+    </section>
+
+    <section>
+      <h3>Почему в рабстве у фреймворка?</h3>
+    </section>
+
+    <section>
+      <h3>Почему нам нужно<br/> больше думать?</h3>
+      <hr/>
+      <ul>
+        <li>SOLID?</li>
+        <li>Service Object?</li>
+        <li>DCI?</li>
+        <li>Mixins/Traits?</li>
+      </ul>
+      <hr/>
+      <p>а они просто для этого пишут функцию</p>
     </section>
 
     <section>
